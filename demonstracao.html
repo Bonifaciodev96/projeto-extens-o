@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Extens&atilde;o - Demonstra&ccedil;&atilde;o da Automnação</title>
+    <style>
+        /* ==========================================================================
+           ESTILOS BASE (Identidade visual id&ecirc;ntica &agrave;s outras p&aacute;ginas)
+           ========================================================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background-color: #1e272e; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { max-width: 1100px; margin: 0 auto; padding: 20px; display: table; width: 100%; }
+        .logo { display: table-cell; font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; vertical-align: middle; }
+        .logo span { color: #3498db; }
+        nav { display: table-cell; text-align: right; vertical-align: middle; }
+        nav a { color: #dcdde1; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s ease; }
+        nav a:hover, nav a.active { color: #3498db; }
+        .hero { background: linear-gradient(135deg, #1e272e 0%, #2c3e50 100%); color: white; text-align: center; padding: 70px 20px; border-bottom: 4px solid #3498db; }
+        .hero h1 { font-size: 2.6rem; margin-bottom: 20px; font-weight: 700; }
+        .container { max-width: 1100px; margin: 40px auto; padding: 60px 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #2c3e50; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background-color: #3498db; border-radius: 2px; }
+        footer { background-color: #1e272e; color: #85929e; text-align: center; padding: 30px 20px; font-size: 0.95rem; border-top: 1px solid #2c3e50; margin-top: 40px; }
+
+        /* ==========================================================================
+           PLAYER DE VÍDEO RESPONSIVO AJUSTADO PARA CELULAR
+           ========================================================================== */
+        .video-wrapper {
+            max-width: 360px; /* Reduz a largura máxima para o formato de celular */
+            margin: 0 auto 30px auto;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain; /* Garante que o vídeo seja exibido por inteiro sem cortes */
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho / Menu atualizado com as suas páginas reais -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Projeto<span>Extens&atilde;o</span></div>
+            <nav>
+                <a href="index.html">Objetivo</a>
+                <a href="resultados.html">Resultados</a>
+                <a href="materiais.html">Materiais Necessários</a>
+                <a href="demonstracao.html" class="active">Demonstra&ccedil;&atilde;o</a>
+                <a href="depoimento.html">Depoimento</a>
+                <a href="fotos.html">Visita Técnica</a>
+                <a href="investimento.html">Investimento</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Superior -->
+    <section class="hero">
+        <h1>A Automa&ccedil;&atilde;o na Pr&aacute;tica</h1>
+    </section>
+
+    <!-- Seção do Vídeo -->
+    <section class="container">
+        <h2 class="section-title">Vídeo de Demonstração da Automação</h2>
+        
+        <!-- Player de Vídeo Nativo -->
+        <div class="video-wrapper">
+            <video controls>
+                <source src="video-automacao.mp4" type="video/mp4">
+                Seu navegador n&atilde;o suporta a reprodu&ccedil;&atilde;o de v&iacute;deos.
+            </video>
+        </div>
+
+        <!-- Descrição -->
+        <div class="video-description">
+            <p>Assista acima &agrave; demonstra&ccedil;&atilde;o pr&aacute;tica do fluxo automatizado de atendimento rodando no WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 - Projeto de Extens&atilde;o Acadêmica - Faculdade São Lourenço</p>
+    </footer>
+
+</body>
+</html>

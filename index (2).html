@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Extens&atilde;o - Objetivo</title>
+    <style>
+        /* ==========================================================================
+           ESTILOS BASE (Comum para todas as p&aacute;ginas)
+           ========================================================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background-color: #1e272e; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { max-width: 1100px; margin: 0 auto; padding: 20px; display: table; width: 100%; }
+        .logo { display: table-cell; font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; vertical-align: middle; }
+        .logo span { color: #3498db; }
+        nav { display: table-cell; text-align: right; vertical-align: middle; }
+        nav a { color: #dcdde1; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s ease; }
+        nav a:hover, nav a.active { color: #3498db; }
+        .hero { background: linear-gradient(135deg, #1e272e 0%, #2c3e50 100%); color: white; text-align: center; padding: 70px 20px; border-bottom: 4px solid #3498db; }
+        .hero h1 { font-size: 2.6rem; font-weight: 700; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #2c3e50; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background-color: #3498db; border-radius: 2px; }
+        .bg-white { background-color: #ffffff; }
+        footer { background-color: #1e272e; color: #85929e; text-align: center; padding: 30px 20px; font-size: 0.95rem; border-top: 1px solid #2c3e50; margin-top: 40px; }
+        
+        /* Estilos de Conte&uacute;do da P&aacute;gina Objetivo */
+        .conteudo-texto { max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #485460; }
+        .conteudo-texto p { margin-bottom: 20px; text-align: justify; }
+        .lista-objetivos { margin: 25px 0; padding-left: 20px; }
+        .lista-objetivos li { margin-bottom: 10px; list-style-type: square; color: #2c3e50; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Projeto<span>Extens&atilde;o</span></div>
+            <nav>
+                <a href="index.html" class="active">Objetivo</a>
+                <a href="qrcode.html">Acesse no celular</a>
+                <a href="resultados.html">Resultados</a>
+                <a href="materiais.html">Materiais</a>
+                <a href="demonstracao.html">Demonstra&ccedil;&atilde;o</a>
+                <a href="depoimento.html">Depoimento</a>
+                <a href="fotos.html">Visita T&eacute;cnica</a>
+                <a href="investimento.html">Investimento financeiro</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Superior com as informações acadêmicas inseridas -->
+    <section class="hero">
+        <h1>Automa&ccedil;&atilde;o de Atendimento no WhatsApp</h1>
+        <p style="font-size: 1.2rem; color: #3498db; font-weight: 600; margin-top: 10px; letter-spacing: 0.5px;">
+            Projeto Extens&atilde;o Acad&ecirc;mica &mdash; Faculdade S&atilde;o Louren&ccedil;o
+        </p>
+        <p style="font-size: 1rem; color: #dcdde1; margin-top: 8px;">
+            17/06/2026 &mdash; <strong>Alunos:</strong> Luis Gustavo Bonifácio, Davi Matheus Miranda de Albuquerque
+        </p>
+    </section>
+
+    <section class="container bg-white" style="border-radius: 8px; margin-top: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <h2 class="section-title">Objetivo do Projeto</h2>
+        <div class="conteudo-texto">
+            <p>O objetivo deste projeto de extens&atilde;o foi desenvolver e implementar uma automa&ccedil;&atilde;o de atendimento via WhatsApp para a empresa parceira. A solu&ccedil;&atilde;o visa eliminar tarefas repetitivas e acelerar o tempo de resposta, garantindo agilidade no primeiro contato.</p>
+            
+            <p>Como resultado pr&aacute;tico, o projeto promove uma maior satisfa&ccedil;&atilde;o dos clientes no relacionamento di&aacute;rio e eleva a produtividade operacional da equipe humana, que passa a focar em demandas complexas.</p>
+            
+            <h3 style="color: #2c3e50; margin-bottom: 15px;">Metas Alcan&ccedil;adas:</h3>
+            <ul class="lista-objetivos">
+                <li>Acelera&ccedil;&atilde;o no tempo de resposta inicial ao cliente.</li>
+                <li>Aumento imediato na satisfa&ccedil;&atilde;o do p&uacute;blico atendido.</li>
+                <li>Otimiza&ccedil;&atilde;o do tempo interno e ganho de produtividade.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Projeto de Extens&atilde;o Acadêmica - Faculdade São Lourenço</p>
+    </footer>
+
+</body>
+</html>

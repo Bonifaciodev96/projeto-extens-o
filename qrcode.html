@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Extens&atilde;o - Acesse o Site</title>
+    <style>
+        /* ==========================================================================
+           ESTILOS BASE (Identidade visual unificada)
+           ========================================================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+        header { background-color: #1e272e; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 100%; }
+        .nav-container { max-width: 1100px; margin: 0 auto; padding: 20px; display: table; width: 100%; }
+        .logo { display: table-cell; font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; vertical-align: middle; }
+        .logo span { color: #3498db; }
+        nav { display: table-cell; text-align: right; vertical-align: middle; }
+        nav a { color: #dcdde1; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s ease; }
+        nav a:hover, nav a.active { color: #3498db; }
+        .hero { background: linear-gradient(135deg, #1e272e 0%, #2c3e50 100%); color: white; text-align: center; padding: 50px 20px; border-bottom: 4px solid #3498db; width: 100%; }
+        .hero h1 { font-size: 2.4rem; font-weight: 700; }
+        
+        /* ==========================================================================
+           ÁREA CENTRAL DO QR CODE
+           ========================================================================== */
+        .container-qrcode { flex: 1; display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
+        .qr-card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; max-width: 450px; width: 100%; border-top: 6px solid #3498db; }
+        .qr-card h2 { color: #2c3e50; font-size: 1.6rem; margin-bottom: 10px; }
+        .qr-card p { color: #7f8c8d; font-size: 1rem; margin-bottom: 25px; }
+        
+        /* Moldura/Ajuste da imagem do QR Code */
+        .qr-box { background: #f8f9fa; padding: 20px; border-radius: 8px; display: inline-block; border: 1px solid #e2e8f0; margin-bottom: 20px; }
+        .qr-box img { width: 250px; height: 250px; display: block; object-fit: contain; }
+        
+        .site-link { display: inline-block; font-weight: 600; color: #3498db; text-decoration: none; font-size: 1.1rem; background: #e1f0fa; padding: 8px 20px; border-radius: 20px; transition: all 0.3s ease; }
+        .site-link:hover { background: #3498db; color: white; }
+
+        footer { background-color: #1e272e; color: #85929e; text-align: center; padding: 30px 20px; font-size: 0.95rem; border-top: 1px solid #2c3e50; width: 100%; }
+
+        /* ==========================================================================
+           VERSÃO MOBILE
+           ========================================================================== */
+        @media (max-width: 768px) {
+            .nav-container { display: block; text-align: center; padding: 15px 10px; }
+            .logo { display: block; text-align: center; margin-bottom: 15px; }
+            nav { display: block; text-align: center; }
+            nav a { margin: 0 5px; font-size: 0.85rem; display: inline-block; }
+            .hero h1 { font-size: 1.8rem; }
+            .qr-card { padding: 25px 15px; }
+            .qr-box img { width: 200px; height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Projeto<span>Extens&atilde;o</span></div>
+            <nav>
+                <a href="index.html">Objetivo</a>
+                <a href="resultados.html">Resultados</a>
+                <a href="materiais.html">Materiais</a>
+                <a href="demonstracao.html">Demonstra&ccedil;&atilde;o</a>
+                <a href="fotos.html">Visita T&eacute;cnica</a>
+                <a href="investimento.html">Investimento</a>
+                <a href="depoimentos.html">Depoimentos</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Acesse Nosso Portal</h1>
+    </section>
+
+    <div class="container-qrcode">
+        <div class="qr-card">
+            <h2>Abra no Celular</h2>
+            <p>Aponte a c&acirc;mera do seu smartphone para o c&oacute;digo abaixo para navegar no site.</p>
+            
+            <div class="qr-box">
+                <img src="qrcode.png" alt="QR Code do Site">
+            </div>
+            
+            <div>
+                <a href="index.html" class="site-link">Ou clique aqui para acessar</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Projeto de Extens&atilde;o Universit&aacute;ria. Desenvolvido para a disciplina de Gest&atilde;o de Projetos.</p>
+    </footer>
+
+</body>
+</html>

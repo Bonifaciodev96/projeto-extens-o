@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Extens&atilde;o - Investimento</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background-color: #1e272e; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { max-width: 1100px; margin: 0 auto; padding: 20px; display: table; width: 100%; }
+        .logo { display: table-cell; font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; vertical-align: middle; }
+        .logo span { color: #3498db; }
+        nav { display: table-cell; text-align: right; vertical-align: middle; }
+        nav a { color: #dcdde1; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s ease; }
+        nav a:hover, nav a.active { color: #3498db; }
+        .hero { background: linear-gradient(135deg, #1e272e 0%, #2c3e50 100%); color: white; text-align: center; padding: 70px 20px; border-bottom: 4px solid #3498db; }
+        .hero h1 { font-size: 2.6rem; font-weight: 700; }
+        .container { max-width: 1100px; margin: 40px auto; padding: 60px 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 30px; color: #2c3e50; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background-color: #3498db; border-radius: 2px; }
+        .sub-title { font-size: 1.4rem; color: #2c3e50; margin: 30px 0 15px 0; padding-bottom: 5px; border-bottom: 2px solid #ecf0f1; }
+        .tabela-investimento { display: table; width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        .linha-cabecalho { display: table-row; background-color: #2c3e50; color: white; font-weight: bold; }
+        .linha-corpo { display: table-row; background-color: #f8f9fa; }
+        .linha-corpo:nth-child(even) { background-color: #ffffff; }
+        .celula { display: table-cell; padding: 15px; border-bottom: 1px solid #e2e8f0; vertical-align: middle; }
+        .celula-preco { font-weight: bold; color: #2e86de; }
+        .total-box { background: #e1f0fa; border-left: 4px solid #3498db; padding: 20px; margin-top: 35px; border-radius: 0 6px 6px 0; font-size: 1.1rem; }
+        footer { background-color: #1e272e; color: #85929e; text-align: center; padding: 30px 20px; font-size: 0.95rem; border-top: 1px solid #2c3e50; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Projeto<span>Extens&atilde;o</span></div>
+            <nav>
+                <a href="index.html">Objetivo</a>
+                <a href="resultados.html">Resultados</a>
+                <a href="materiais.html">Materiais</a>
+                <a href="demonstracao.html">Demonstra&ccedil;&atilde;o</a>
+                <a href="depoimento.html">Depoimento</a>
+                <a href="fotos.html">Visita T&eacute;cnica</a>
+                <a href="investimento.html" class="active">Investimento</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Viabilidade Financeira</h1>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Custos Detalhados da Solu&ccedil;&atilde;o</h2>
+        
+        <h3 class="sub-title">1. Investimento na Implementa&ccedil;&atilde;o (Pago uma &uacute;nica vez)</h3>
+        <div class="tabela-investimento">
+            <div class="linha-cabecalho">
+                <div class="celula" style="width: 30%;">Item / Servi&ccedil;o</div>
+                <div class="celula" style="width: 50%;">Descri&ccedil;&atilde;o da Atividade</div>
+                <div class="celula" style="width: 20%;">Valor &Uacute;nico</div>
+            </div>
+            
+            <div class="linha-corpo">
+                <div class="celula"><strong>Implementação da automação</strong></div>
+                <div class="celula">Mapeamento de regras de neg&oacute;cio, cria&ccedil;&atilde;o do fluxo de triagem e integra&ccedil;&atilde;o inicial do bot com o servidor.</div>
+                <div class="celula celula-preco" style="color: #10ac84;">R$ 1.500,00<br><span style="font-size:0.75rem; color:#7f8c8d; font-weight:normal;">(Projeto Acad&ecirc;mico)</span></div>
+            </div>
+        </div>
+
+        <h3 class="sub-title">2. Custos Operacionais Recorrentes (Mensalidades)</h3>
+        <div class="tabela-investimento">
+            <div class="linha-cabecalho">
+                <div class="celula" style="width: 30%;">Ferramenta / Infraestrutura</div>
+                <div class="celula" style="width: 50%;">Descri&ccedil;&atilde;o da Utilidade</div>
+                <div class="celula" style="width: 20%;">Custo Mensal</div>
+            </div>
+            
+            <div class="linha-corpo">
+                <div class="celula"><strong>Suporte</strong></div>
+                <div class="celula">Suporte completo para manuten&ccedil;&atilde;o e altera&ccedil;&otilde;es necess&aacute;rias no fluxo de automa&ccedil;&atilde;o.</div>
+                <div class="celula celula-preco" style="color: #10ac84;">R$ 199,00<br><span style="font-size:0.75rem; color:#7f8c8d; font-weight:normal;">(Projeto Acad&ecirc;mico)</span></div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Projeto de Extens&atilde;o Acadêmica - Faculdade São Lourenço</p>
+    </footer>
+
+</body>
+</html>

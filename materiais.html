@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Extens&atilde;o - Materiais Necess&aacute;rios</title>
+    <style>
+        /* ==========================================================================
+           ESTILOS BASE (Identidade visual id&ecirc;ntica &agrave;s outras p&aacute;ginas)
+           ========================================================================== */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background-color: #1e272e; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .nav-container { max-width: 1100px; margin: 0 auto; padding: 20px; display: table; width: 100%; }
+        .logo { display: table-cell; font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; vertical-align: middle; }
+        .logo span { color: #3498db; }
+        nav { display: table-cell; text-align: right; vertical-align: middle; }
+        nav a { color: #dcdde1; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s ease; }
+        nav a:hover, nav a.active { color: #3498db; }
+        .hero { background: linear-gradient(135deg, #1e272e 0%, #2c3e50 100%); color: white; text-align: center; padding: 70px 20px; border-bottom: 4px solid #3498db; }
+        .hero h1 { font-size: 2.6rem; font-weight: 700; }
+        .container { max-width: 1100px; margin: 40px auto; padding: 60px 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #2c3e50; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background-color: #3498db; border-radius: 2px; }
+        
+        /* ==========================================================================
+           GRID DE MATERIAIS (Desktop original mantido)
+           ========================================================================== */
+        .grid-materiais { display: table; width: 100%; table-layout: fixed; border-spacing: 20px; }
+        .linha-material { display: table-row; }
+        .item-material { display: table-cell; background: #f8f9fa; padding: 25px; border-radius: 6px; border-left: 4px solid #3498db; vertical-align: top; }
+        .item-material h3 { color: #2c3e50; margin-bottom: 10px; font-size: 1.2rem; }
+        .item-material p { color: #57606f; font-size: 0.95rem; }
+        footer { background-color: #1e272e; color: #85929e; text-align: center; padding: 30px 20px; font-size: 0.95rem; border-top: 1px solid #2c3e50; margin-top: 40px; }
+
+        /* ==========================================================================
+           MODIFICAÇÕES APENAS PARA A VERSÃO MOBILE (CELULAR)
+           ========================================================================== */
+        @media (max-width: 768px) {
+            /* Menu responsivo */
+            .nav-container { display: block; text-align: center; padding: 15px 10px; }
+            .logo { display: block; text-align: center; margin-bottom: 15px; }
+            nav { display: block; text-align: center; }
+            nav a { margin: 0 8px; font-size: 0.9rem; display: inline-block; }
+            
+            /* Ajustes de espaçamento do container no celular */
+            .hero h1 { font-size: 1.8rem; }
+            .container { margin: 15px; padding: 25px 15px; }
+            .section-title { font-size: 1.6rem; }
+
+            /* Faz os elementos da tabela virarem blocos individuais no celular */
+            .grid-materiais, .linha-material, .item-material {
+                display: block !important;
+                width: 100% !important;
+            }
+            .grid-materiais {
+                border-spacing: 0 !important;
+            }
+            .item-material {
+                margin-bottom: 20px !important; /* Cria o espaçamento correto entre as caixas */
+            }
+            /* Esconde a linha vazia de 20px que dava espaço no desktop */
+            .linha-material[style*="height: 20px;"] {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">Projeto<span>Extens&atilde;o</span></div>
+            <nav>
+                <a href="index.html">Objetivo</a>
+                <a href="resultados.html">Resultados</a>
+                <a href="materiais.html" class="active">Materiais</a>
+                <a href="demonstracao.html">Demonstra&ccedil;&atilde;o</a>
+                <a href="depoimento.html">Depoimento</a>
+                <a href="fotos.html">Visita T&eacute;cnica</a>
+                <a href="investimento.html">Investimento</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Infraestrutura Necess&aacute;ria</h1>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Materiais para Rodar a Automa&ccedil;&atilde;o</h2>
+        
+        <div class="grid-materiais">
+            <div class="linha-material">
+                <div class="item-material">
+                    <h3>1. N&uacute;mero de Telefone Exclusivo (WhatsApp Business)</h3>
+                    <p>Um chip ou n&uacute;mero ativo configurado obrigatoriamente como conta WhatsApp Business. Isso evita conflitos com contas pessoais, garante acesso a recursos comerciais e mant&eacute;m a exclusividade do bot.</p>
+                </div>
+                <div class="item-material">
+                    <h3>2. Smartphone Conectado</h3>
+                    <p>Um aparelho celular ligado e conectado &agrave; internet para fazer a valida&ccedil;&atilde;o inicial via QR Code (estilo WhatsApp Web) e manter a sess&atilde;o ativa.</p>
+                </div>
+            </div>
+            <div class="linha-material" style="height: 20px;"></div>
+            <div class="linha-material">
+                <div class="item-material">
+                    <h3>3. Whatsapp Business vinculado com o Meta</h3>
+                    <p>Conexão do número de whatsapp ativa e verificada com a Meta para evitar possíveis bloqueios.</p>
+                </div>
+                <div class="item-material">
+                    <h3>4. Computador com bom desempenho</h3>
+                    <p>É necessário um computador com bom desemepenho para poder utilziar todos os recursos da automação e da plataforma.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Projeto de Extens&atilde;o Acadêmica - Faculdade São Lourenço</p>
+    </footer>
+
+</body>
+</html>
