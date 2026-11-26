@@ -1,125 +1,64 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Extens&atilde;o - Resultados</title>
-    <style>
-        /* ==========================================================================
-           ESTILOS BASE (Identidade visual id&ecirc;ntica &agrave;s outras p&aacute;ginas)
-           ========================================================================== */
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
-        header { background-color: #1e272e; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .nav-container { max-width: 1100px; margin: 0 auto; padding: 20px; display: table; width: 100%; }
-        .logo { display: table-cell; font-size: 1.4rem; font-weight: bold; letter-spacing: 1px; vertical-align: middle; }
-        .logo span { color: #3498db; }
-        nav { display: table-cell; text-align: right; vertical-align: middle; }
-        nav a { color: #dcdde1; text-decoration: none; margin-left: 25px; font-weight: 500; transition: color 0.3s ease; }
-        nav a:hover, nav a.active { color: #3498db; }
-        .hero { background: linear-gradient(135deg, #1e272e 0%, #2c3e50 100%); color: white; text-align: center; padding: 70px 20px; border-bottom: 4px solid #3498db; }
-        .hero h1 { font-size: 2.6rem; font-weight: 700; }
-        .container { max-width: 1100px; margin: 40px auto; padding: 60px 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #2c3e50; position: relative; padding-bottom: 10px; }
-        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background-color: #3498db; border-radius: 2px; }
-        
-        /* ==========================================================================
-           CARDS DE RESULTADOS (Desktop)
-           ========================================================================== */
-        .cards-wrapper { 
-            display: table; 
-            width: 100%; 
-            table-layout: fixed; 
-            border-spacing: 20px 0; 
-            margin-top: 20px; 
-        }
-        .card { 
-            display: table-cell; 
-            background: white; 
-            padding: 35px 25px; 
-            border-radius: 8px; 
-            text-align: center; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-            border-top: 5px solid #3498db; 
-            vertical-align: top; 
-            border-left: 1px solid #eee;
-            border-right: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-        }
-        .card h3 { font-size: 3rem; color: #2e86de; margin-bottom: 15px; font-weight: 700; }
-        .card p { color: #57606f; font-size: 1rem; }
-        footer { background-color: #1e272e; color: #85929e; text-align: center; padding: 30px 20px; font-size: 0.95rem; border-top: 1px solid #2c3e50; margin-top: 40px; }
 
-        /* ==========================================================================
-           REGRAS EXCLUSIVAS PARA MOBILE (CELULAR)
-           ========================================================================== */
-        @media (max-width: 768px) {
-            /* Ajustes do menu para não quebrar */
-            .nav-container { display: block; text-align: center; padding: 15px 10px; }
-            .logo { display: block; text-align: center; margin-bottom: 15px; }
-            nav { display: block; text-align: center; }
-            nav a { margin: 0 8px; font-size: 0.9rem; display: inline-block; }
-            
-            /* Ajustes do Container Geral */
-            .hero h1 { font-size: 1.8rem; }
-            .container { margin: 15px; padding: 25px 15px; }
-            .section-title { font-size: 1.6rem; }
+<section class="container">
+    <h2 class="section-title">Benefícios da Inteligência Artificial</h2>
 
-            /* Transformar a estrutura de tabela em blocos individuais (empilhados) */
-            .cards-wrapper {
-                display: block;
-            }
-            .card {
-                display: block;
-                width: 100%;
-                margin-bottom: 20px; /* Espaço entre um card e outro */
-                padding: 25px 20px;
-            }
-        }
-    </style>
-</head>
-<body>
+    <p>A utilização de agentes de inteligência artificial no atendimento empresarial pode proporcionar diversos benefícios, contribuindo para a eficiência operacional, a produtividade e a melhoria da experiência dos clientes.</p>
 
-    <header>
-        <div class="nav-container">
-            <div class="logo">Projeto<span>Extens&atilde;o</span></div>
-            <nav>
-                <a href="index.html">Objetivo</a>
-                <a href="resultados.html" class="active">Resultados</a>
-                <a href="materiais.html">Materiais</a>
-                <a href="demonstracao.html">Demonstra&ccedil;&atilde;o</a>
-                <a href="depoimento.html">Depoimento</a>
-                <a href="fotos.html">Visita T&eacute;cnica</a>
-                <a href="investimento.html">Investimento</a>
-            </nav>
-        </div>
-    </header>
+    <div class="grid-materiais">
 
-    <section class="hero">
-        <h1>M&eacute;tricas e Impacto Gerado</h1>
-    </section>
-
-    <section class="container">
-        <h2 class="section-title">Resultados Quantitativos</h2>
-        <div class="cards-wrapper">
-            <div class="card">
-                <h3>+50%</h3>
-                <p>Aumento na capacidade de atendimentos simult&acirc;neos na plataforma sem a necessidade de novas contrata&ccedil;&otilde;es diretas.</p>
+        <div class="linha-material">
+            <div class="item-material">
+                <h3>1. Atendimento 24 horas</h3>
+                <p>Possibilidade de realizar atendimentos a qualquer hora do dia, inclusive aos finais de semana e feriados.</p>
             </div>
-            <div class="card">
-                <h3>-80%</h3>
-                <p>Redu&ccedil;&atilde;o no tempo de espera do cliente final para o primeiro contato receptivo devido &agrave; triagem instant&acirc;nea do bot.</p>
-            </div>
-            <div class="card">
-                <h3>24/7</h3>
-                <p>Disponibilidade de 24 horas com a automa&ccedil;&atilde;o funcionando para triagem e respostas instant&acirc;neas aos clientes.</p>
+
+            <div class="item-material">
+                <h3>2. Agilidade no atendimento</h3>
+                <p>Redução do tempo de espera dos clientes por meio de respostas automatizadas e contextualizadas.</p>
             </div>
         </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2026 - Projeto de Extens&atilde;o Acadêmica - Faculdade São Lourenço</p>
-    </footer>
+        <div class="linha-material" style="height: 20px;"></div>
 
-</body>
-</html>
+        <div class="linha-material">
+            <div class="item-material">
+                <h3>3. Aumento da produtividade</h3>
+                <p>Automatização de tarefas repetitivas, permitindo que a equipe se concentre em atividades estratégicas.</p>
+            </div>
+
+            <div class="item-material">
+                <h3>4. Redução de custos operacionais</h3>
+                <p>Otimização dos recursos humanos e tecnológicos, contribuindo para a redução de despesas operacionais.</p>
+            </div>
+        </div>
+
+        <div class="linha-material" style="height: 20px;"></div>
+
+        <div class="linha-material">
+            <div class="item-material">
+                <h3>5. Qualificação de potenciais clientes</h3>
+                <p>Coleta de informações relevantes sobre os interessados antes do encaminhamento para a equipe comercial.</p>
+            </div>
+
+            <div class="item-material">
+                <h3>6. Padronização do atendimento</h3>
+                <p>Manutenção de uma comunicação organizada, seguindo as orientações e os procedimentos definidos pela empresa.</p>
+            </div>
+        </div>
+
+        <div class="linha-material" style="height: 20px;"></div>
+
+        <div class="linha-material">
+            <div class="item-material">
+                <h3>7. Escalabilidade</h3>
+                <p>Possibilidade de atender diversos clientes simultaneamente, acompanhando o crescimento da demanda empresarial.</p>
+            </div>
+
+            <div class="item-material">
+                <h3>8. Melhoria da experiência do cliente</h3>
+                <p>Oferta de um atendimento mais ágil, acessível e personalizado, contribuindo para a satisfação dos clientes.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
