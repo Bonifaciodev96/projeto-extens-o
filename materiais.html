@@ -1,13 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Extens&atilde;o - Materiais Necess&aacute;rios</title>
+    <title>Projeto Extensão - Demonstração</title>
+
     <style>
-        /* ==========================================================================
-           ESTILOS BASE (Identidade visual id&ecirc;ntica &agrave;s outras p&aacute;ginas)
-           ========================================================================== */
+        /* ESTILOS BASE */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
         header { background-color: #1e272e; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
@@ -19,137 +19,140 @@
         nav a:hover, nav a.active { color: #3498db; }
         .hero { background: linear-gradient(135deg, #1e272e 0%, #2c3e50 100%); color: white; text-align: center; padding: 70px 20px; border-bottom: 4px solid #3498db; }
         .hero h1 { font-size: 2.6rem; font-weight: 700; }
-        .container { max-width: 1100px; margin: 40px auto; padding: 60px 20px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
         .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #2c3e50; position: relative; padding-bottom: 10px; }
         .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 4px; background-color: #3498db; border-radius: 2px; }
-        
-        /* ==========================================================================
-           GRID DE MATERIAIS (Desktop original mantido)
-           ========================================================================== */
-        .grid-materiais { display: table; width: 100%; table-layout: fixed; border-spacing: 20px; }
-        .linha-material { display: table-row; }
-        .item-material { display: table-cell; background: #f8f9fa; padding: 25px; border-radius: 6px; border-left: 4px solid #3498db; vertical-align: top; }
-        .item-material h3 { color: #2c3e50; margin-bottom: 10px; font-size: 1.2rem; }
-        .item-material p { color: #57606f; font-size: 0.95rem; }
+        .bg-white { background-color: #ffffff; }
         footer { background-color: #1e272e; color: #85929e; text-align: center; padding: 30px 20px; font-size: 0.95rem; border-top: 1px solid #2c3e50; margin-top: 40px; }
 
-        /* ==========================================================================
-           MODIFICAÇÕES APENAS PARA A VERSÃO MOBILE (CELULAR)
-           ========================================================================== */
+        /* ESTILOS DO CONTEÚDO */
+        .conteudo-texto { max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #485460; }
+        .conteudo-texto p { margin-bottom: 20px; text-align: justify; }
+        .lista-objetivos { margin: 25px 0; padding-left: 20px; }
+        .lista-objetivos li { margin-bottom: 10px; list-style-type: square; color: #2c3e50; }
+
+        /* ESTILOS DO VÍDEO */
+        .video-container {
+            max-width: 850px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .video-container video {
+            width: 100%;
+            max-height: 600px;
+            border-radius: 10px;
+            background-color: #000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .legenda-video {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #57606f;
+            text-align: center;
+        }
+
+        /* VERSÃO MOBILE */
         @media (max-width: 768px) {
-            /* Menu responsivo */
             .nav-container { display: block; text-align: center; padding: 15px 10px; }
             .logo { display: block; text-align: center; margin-bottom: 15px; }
             nav { display: block; text-align: center; }
             nav a { margin: 0 8px; font-size: 0.9rem; display: inline-block; }
-            
-            /* Ajustes de espaçamento do container no celular */
             .hero h1 { font-size: 1.8rem; }
-            .container { margin: 15px; padding: 25px 15px; }
+            .container { margin: 15px; padding: 30px 20px; }
             .section-title { font-size: 1.6rem; }
-
-            /* Faz os elementos da tabela virarem blocos individuais no celular */
-            .grid-materiais, .linha-material, .item-material {
-                display: block !important;
-                width: 100% !important;
-            }
-            .grid-materiais {
-                border-spacing: 0 !important;
-            }
-            .item-material {
-                margin-bottom: 20px !important; /* Cria o espaçamento correto entre as caixas */
-            }
-            /* Esconde a linha vazia de 20px que dava espaço no desktop */
-            .linha-material[style*="height: 20px;"] {
-                display: none !important;
-            }
+            .conteudo-texto { font-size: 1rem; }
+            .video-container { margin: 25px auto; }
         }
     </style>
 </head>
+
 <body>
 
     <header>
         <div class="nav-container">
-            <div class="logo">Projeto<span>Extens&atilde;o</span></div>
+            <div class="logo">Projeto<span>Extensão</span></div>
+
             <nav>
                 <a href="index.html">Objetivo</a>
                 <a href="resultados.html">Benefícios</a>
-                <a href="materiais.html" class="active">Tecnologias</a>
-                
-                <a href="aplicacoespraticas.html">Aplicações Práticas</a>
+                <a href="materiais.html">Tecnologias</a>
+                <a href="demonstracao.html" class="active">Demonstração</a>
+                <a href="depoimento.html">Aplicações Práticas</a>
                 <a href="fotos.html">Metodologia</a>
-                <a href="conclusao.html">Conclusão</a>
+                <a href="investimento.html">Conclusão</a>
             </nav>
         </div>
     </header>
 
     <section class="hero">
-        <h1>Infraestrutura Necess&aacute;ria</h1>
+        <h1>Demonstração Prática</h1>
+
+        <p style="font-size: 1.2rem; color: #3498db; font-weight: 600; margin-top: 10px; letter-spacing: 0.5px;">
+            Agente de Inteligência Artificial em funcionamento
+        </p>
     </section>
 
-   
-<section class="container">
-    <h2 class="section-title">Tecnologias utilizadas</h2>
+    <section class="container bg-white" style="border-radius: 8px; margin-top: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
 
-    <p>Para o desenvolvimento deste projeto, foram selecionadas ferramentas e tecnologias que permitem a criação, configuração e demonstração de uma solução de atendimento automatizado.</p>
+        <h2 class="section-title">Demonstração do Agente de IA</h2>
 
-    <div class="grid-materiais">
+        <div class="conteudo-texto">
 
-        <div class="linha-material">
-            <div class="item-material">
-                <h3>1. HTML5</h3>
-                <p>Linguagem de marcação utilizada para estruturar as páginas e os conteúdos do site.</p>
-            </div>
+            <p>Nesta seção, é apresentada uma demonstração prática do funcionamento de um agente de inteligência artificial aplicado ao atendimento empresarial por meio do WhatsApp.</p>
 
-            <div class="item-material">
-                <h3>2. CSS3</h3>
-                <p>Tecnologia responsável pela estilização, organização visual e adaptação do site aos diferentes dispositivos.</p>
-            </div>
+            <p>O agente foi configurado por meio da plataforma GUIMMO, com o objetivo de interpretar mensagens, realizar perguntas, coletar informações relevantes e conduzir o atendimento de maneira automatizada.</p>
+
+            <p>Assista ao vídeo abaixo e conheça, na prática, como essa tecnologia pode ser aplicada à rotina de uma empresa.</p>
+
         </div>
 
-        <div class="linha-material" style="height: 20px;"></div>
+        <!-- VÍDEO DA DEMONSTRAÇÃO -->
 
-        <div class="linha-material">
-            <div class="item-material">
-                <h3>3. GitHub</h3>
-                <p>Plataforma utilizada para armazenamento, gerenciamento e versionamento dos arquivos do projeto.</p>
-            </div>
+        <div class="video-container">
 
-            <div class="item-material">
-                <h3>4. GitHub Pages</h3>
-                <p>Serviço de hospedagem utilizado para disponibilizar gratuitamente o site na internet.</p>
-            </div>
+            <video controls playsinline preload="metadata">
+                <source src="demonstracao.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeos.
+            </video>
+
+            <p class="legenda-video">
+                Vídeo 1 - Demonstração prática do atendimento automatizado pelo WhatsApp.
+            </p>
+
         </div>
 
-        <div class="linha-material" style="height: 20px;"></div>
+        <div class="conteudo-texto">
 
-        <div class="linha-material">
-            <div class="item-material">
-                <h3>5. GUIMMO</h3>
-                <p>Plataforma utilizada para configuração, personalização e implementação do agente de inteligência artificial.</p>
-            </div>
+            <h3 style="color: #2c3e50; margin-bottom: 15px;">
+                Funcionalidades da solução:
+            </h3>
 
-            <div class="item-material">
-                <h3>6. WhatsApp</h3>
-                <p>Canal de comunicação utilizado para realizar o atendimento automatizado e a interação com os clientes.</p>
-            </div>
+            <ul class="lista-objetivos">
+
+                <li>Atendimento automatizado pelo WhatsApp.</li>
+
+                <li>Interpretação das mensagens recebidas.</li>
+
+                <li>Geração de respostas contextualizadas.</li>
+
+                <li>Coleta de informações relevantes dos clientes.</li>
+
+                <li>Qualificação de potenciais clientes.</li>
+
+                <li>Direcionamento para atendimento humano quando necessário.</li>
+
+            </ul>
+
+            <p>A demonstração busca apresentar como a inteligência artificial pode auxiliar as empresas na organização e automatização dos processos de atendimento, contribuindo para uma comunicação mais ágil e eficiente.</p>
+
         </div>
 
-        <div class="linha-material" style="height: 20px;"></div>
-
-        <div class="linha-material">
-            <div class="item-material">
-                <h3>7. Inteligência Artificial Generativa</h3>
-                <p>Tecnologia utilizada para interpretar mensagens, compreender solicitações e gerar respostas contextualizadas de acordo com as instruções fornecidas ao agente.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
+    </section>
 
     <footer>
-        <p>&copy; 2026 - Projeto de Extens&atilde;o Acadêmica - Faculdade São Lourenço</p>
+        <p>&copy; 2026 - Projeto de Extensão Acadêmica - Faculdade São Lourenço</p>
     </footer>
 
 </body>
